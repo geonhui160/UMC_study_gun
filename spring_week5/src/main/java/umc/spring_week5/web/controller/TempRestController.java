@@ -18,4 +18,10 @@ public class TempRestController {
 
         return ApiResponse.onSuccess(TempConverter.toTempTestDTO());
     }
+    @GetMapping("/exception")
+    public ApiResponse<TempResponse.TempExceptionDTO> exceptionAPI(@RequestParam Integer flag){
+
+        return null;
+    }
+}
 }
